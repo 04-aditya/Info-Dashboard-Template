@@ -1,5 +1,3 @@
-# first-typecript-app
-First attempt at creating a typescript react app from scratch.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
