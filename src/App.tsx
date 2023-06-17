@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import icon from "./Assets/info.gif";
+import "./App.css";
+import { CustomButton } from "./Components/CustomButton";
+import MiniDrawer from "./Components/CustomSideBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import { Home } from "./Pages/Home/Home";
+import { Dashboard } from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <BrowserRouter>
+        <AppBar
+          position="fixed"
+          color="inherit"
+          sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
         >
-          Learn React
-        </a>
-      </header>
+          <Toolbar>
+            <img
+              src={icon}
+              style={{
+                height: "50px",
+                marginLeft: "-15px",
+                marginRight: "15px",
+              }}
+            />
+            <Typography variant="h6" noWrap component="div">
+              Info Dashboard Template
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <MiniDrawer />
+        <Routes>
+          <Route path="/" Component={() => <Home />} />
+          <Route path="/dashboard" Component={() => <Dashboard />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
