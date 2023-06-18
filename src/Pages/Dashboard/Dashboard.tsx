@@ -3,7 +3,7 @@ import "./Dashboard.css";
 
 export const Dashboard = () => {
   return (
-    <div className="App-content">
+    <div className="Dashboard">
       <Toolbar />
       <div>Dashboard Page</div>
     </div>
