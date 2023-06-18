@@ -31,7 +31,7 @@ export const CustomAppBar: any = () => {
             marginRight: "15px",
           }}
         />
-        <Typography variant="h6" noWrap component="div">
+        <Typography variant="h6" noWrap component="div" fontFamily="serif">
           Info Dashboard Template
         </Typography>
         <Box sx={appBarBoxStyle}>
@@ -47,7 +47,7 @@ export const CustomAppBar: any = () => {
             }}
           />
           <IconButton size="medium" color="default">
-            <Badge color="secondary" variant="dot">
+            <Badge color="success" variant="dot">
               <NotificationsIcon />
             </Badge>
           </IconButton>

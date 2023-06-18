@@ -1,16 +1,19 @@
 import { Card, Toolbar } from "@mui/material";
-import icon from "../../Assets/info.gif";
 import "./Home.css";
-import { cardStyle } from "../../Styles/ComponentStyles";
+import { graphCardStyle } from "../../Styles/ComponentStyles";
+import { StackedAreaChartExample } from "../../Charts/StackedAreaChartExample";
+import { ProfileCard } from "../../Components/ProfileCard";
 
 export const Home = () => {
   return (
-    <div className="App-content">
+    <div style={{ marginLeft: "70px" }}>
       <Toolbar />
-      <div>Home Page</div>
-      <Card style={cardStyle}>
-        <img src={icon} alt="" height={"250px"} style={{ padding: "25px" }} />
-      </Card>
+      <div className="Home">
+        <Card sx={graphCardStyle}>
+          <StackedAreaChartExample />
+        </Card>
+        <ProfileCard />
+      </div>
     </div>
   );
 };

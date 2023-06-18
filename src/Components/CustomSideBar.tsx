@@ -120,7 +120,10 @@ export default function CustomSideBar() {
                 </ListItemIcon>
                 <ListItemText
                   primary={text}
-                  sx={{ opacity: open ? 1 : 0, color: "black" }}
+                  sx={{
+                    opacity: open ? 1 : 0,
+                    color: "black",
+                  }}
                 />
               </ListItemButton>
             </ListItem>
