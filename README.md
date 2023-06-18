@@ -1,6 +1,11 @@
 # A Basic Information Dashboard Template
 
-This project is an attempt to make a basic template of a dashboard design to showcase various informations through tabs. This template includes Material UI components, and the navigation is done through react-router-dom.
+This project is an attempt to make a basic template of a dashboard design to showcase various informations through tabs.
+This template includes Material UI components, and the navigation is done through react-router-dom.\
+\
+It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
+All profile references can be found in the
+[LinksandUsernames.ts](src/LinksandUsernames.ts) file and can be changed to show relevant data to you.
 
 ## Pre-requisites
 

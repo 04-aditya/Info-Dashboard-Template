@@ -4,6 +4,7 @@ import bannerImage from "../Assets/bannerImage.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
+import { linkedInUsername, gitUsername } from "../LinksandUsernames";
 
 export const ProfileCard: any = () => {
   return (
@@ -41,7 +42,7 @@ export const ProfileCard: any = () => {
             alignContent: "center",
           }}
         >
-          <Link to="https://github.com/04-aditya" target="_blank">
+          <Link to={`https://github.com/${gitUsername}`} target="_blank">
             <Button
               variant="contained"
               sx={{
@@ -61,7 +62,7 @@ export const ProfileCard: any = () => {
             </Button>
           </Link>
           <Link
-            to="https://www.linkedin.com/in/aditya04banerjee/"
+            to={`https://www.linkedin.com/in/${linkedInUsername}`}
             target="_blank"
           >
             <Button
@@ -86,10 +87,10 @@ export const ProfileCard: any = () => {
         <picture>
           <source
             media="(prefers-color-scheme: default)"
-            srcSet="https://streak-stats.demolab.com?user=04-aditya&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8"
+            srcSet={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8`}
           />
           <img
-            src="https://streak-stats.demolab.com?user=04-aditya&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8"
+            src={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8`}
             alt="githubstats"
           />
         </picture>
