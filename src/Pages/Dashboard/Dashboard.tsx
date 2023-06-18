@@ -1,5 +1,4 @@
-import { Card, Toolbar } from "@mui/material";
-import icon from "../../Assets/info.gif";
+import { Toolbar } from "@mui/material";
 import "./Dashboard.css";
 
 export const Dashboard = () => {

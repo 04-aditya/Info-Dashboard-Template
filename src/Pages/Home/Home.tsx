@@ -17,7 +17,7 @@ export const Home = () => {
           justifyContent: "center",
         }}
       >
-        <img src={icon} height={"250px"} style={{ padding: "25px" }} />
+        <img src={icon} alt="" height={"250px"} style={{ padding: "25px" }} />
       </Card>
     </div>
   );

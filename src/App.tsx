@@ -1,8 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
 import icon from "./Assets/info.gif";
 import "./App.css";
-import { CustomButton } from "./Components/CustomButton";
 import MiniDrawer from "./Components/CustomSideBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppBar, Toolbar, Typography } from "@mui/material";
@@ -21,6 +19,7 @@ function App() {
           <Toolbar>
             <img
               src={icon}
+              alt=""
               style={{
                 height: "50px",
                 marginLeft: "-15px",
