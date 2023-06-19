@@ -12,7 +12,6 @@ import {
 import icon from "../Assets/info.gif";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
-import { appBarBoxStyle } from "../Styles/ComponentStyles";
 import profile from "../Assets/profile.jpg";
 
 export const CustomAppBar: any = () => {
@@ -35,7 +34,16 @@ export const CustomAppBar: any = () => {
         <Typography variant="h6" noWrap component="div">
           Info Dashboard Template
         </Typography>
-        <Box sx={appBarBoxStyle}>
+        <Box
+          sx={{
+            width: "400px",
+            position: "fixed",
+            right: "30px",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+          }}
+        >
           <TextField
             size="small"
             color="success"

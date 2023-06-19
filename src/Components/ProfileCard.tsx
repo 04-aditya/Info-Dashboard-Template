@@ -1,5 +1,4 @@
 import { Card, Box, Avatar, Button } from "@mui/material";
-import { cardStyle } from "../Styles/ComponentStyles";
 import bannerImage from "../Assets/bannerImage.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -9,7 +8,19 @@ import profile from "../Assets/profile.jpg";
 
 export const ProfileCard: any = () => {
   return (
-    <Card sx={cardStyle}>
+    <Card
+      sx={{
+        width: "495px",
+        margin: "15px",
+        padding: "15px",
+        boxShadow: "9",
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: "15px",
+      }}
+    >
       <img
         src={bannerImage}
         alt="bannerImage"
