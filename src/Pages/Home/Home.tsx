@@ -1,7 +1,9 @@
 import { Card, Toolbar } from "@mui/material";
 import "./Home.css";
-import { StackedAreaChartExample } from "../../Charts/StackedAreaChartExample";
+import { StackedAreaChartExample } from "../../ChartsandTables/StackedAreaChartExample";
 import { ProfileCard } from "../../Components/ProfileCard";
+import { DataTableExample } from "../../ChartsandTables/DataTableExample";
+import { PieChartExample } from "../../ChartsandTables/PieChartExample";
 
 export const Home = () => {
   return (
@@ -23,6 +25,34 @@ export const Home = () => {
           <StackedAreaChartExample />
         </Card>
         <ProfileCard />
+        <Card
+          sx={{
+            width: "45%",
+            margin: "15px",
+            padding: "15px",
+            boxShadow: "9",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "15px",
+          }}
+        >
+          <DataTableExample />
+        </Card>
+        <Card
+          sx={{
+            width: "45%",
+            margin: "15px",
+            padding: "15px",
+            boxShadow: "9",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "15px",
+          }}
+        >
+          <PieChartExample />
+        </Card>
       </div>
     </div>
   );

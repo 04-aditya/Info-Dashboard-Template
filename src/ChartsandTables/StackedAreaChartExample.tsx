@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import {
   AreaChart,
@@ -7,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  Label,
 } from "recharts";
 
 const data = [
@@ -56,11 +58,12 @@ const data = [
 
 export const StackedAreaChartExample = () => {
   return (
-    <div style={{ width: "100%" }}>
-      <ResponsiveContainer width="100%" height={400}>
+    <div style={{ width: "100%", height: "400px" }}>
+      <Typography>Dummy Area Chart</Typography>
+      <ResponsiveContainer width="100%" height={380}>
         <AreaChart
           width={900}
-          height={400}
+          height={380}
           data={data}
           margin={{
             top: 25,
@@ -70,8 +73,13 @@ export const StackedAreaChartExample = () => {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis dataKey="name">
+            <Label value="Name" position="bottom" />
+          </XAxis>
+          <YAxis>
+            <Label value="Value" angle={-90} position="left" dy="-10" />
+          </YAxis>
+
           <Tooltip />
           <Area
             type="monotone"
