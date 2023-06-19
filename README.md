@@ -3,7 +3,8 @@
 This project is an attempt to make a basic template of a dashboard design to showcase various information through tabs and cards.
 This template includes Material UI components, and the navigation is done through react-router-dom.\
 \
-It includes data about several professional profiles (eg. Github and LinkedIn profiles).\ Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) for the streak widget which is part of the profile card.\
+It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
+Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) for the streak widget which is part of the profile card.\
 \
 All profile references can be found in the
 [LinksandUsernames.ts](src/LinksandUsernames.ts) file and can be changed to show relevant data to you.
