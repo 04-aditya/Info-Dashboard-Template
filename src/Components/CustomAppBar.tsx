@@ -13,6 +13,7 @@ import icon from "../Assets/info.gif";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
 import { appBarBoxStyle } from "../Styles/ComponentStyles";
+import profile from "../Assets/profile.jpg";
 
 export const CustomAppBar: any = () => {
   return (
@@ -31,14 +32,18 @@ export const CustomAppBar: any = () => {
             marginRight: "15px",
           }}
         />
-        <Typography variant="h6" noWrap component="div" fontFamily="serif">
+        <Typography variant="h6" noWrap component="div">
           Info Dashboard Template
         </Typography>
         <Box sx={appBarBoxStyle}>
           <TextField
             size="small"
+            color="success"
             placeholder="Search..."
             InputProps={{
+              sx: {
+                borderRadius: "15px",
+              },
               startAdornment: (
                 <InputAdornment position="start">
                   <SearchIcon />
@@ -51,7 +56,7 @@ export const CustomAppBar: any = () => {
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <Avatar>A</Avatar>
+          <Avatar src={profile}></Avatar>
         </Box>
       </Toolbar>
     </AppBar>

@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 import { linkedInUsername, gitUsername } from "../LinksandUsernames";
+import profile from "../Assets/profile.jpg";
 
 export const ProfileCard: any = () => {
   return (
@@ -12,7 +13,7 @@ export const ProfileCard: any = () => {
       <img
         src={bannerImage}
         alt="bannerImage"
-        style={{ height: "150px", width: "495px" }}
+        style={{ height: "140px", width: "495px" }}
       ></img>
       <Avatar
         sx={{
@@ -25,11 +26,10 @@ export const ProfileCard: any = () => {
             transform: "scale(1.2)",
           },
         }}
-      >
-        A
-      </Avatar>
+        src={profile}
+      />
       <Box
-        sx={{ height: "250px", width: "100%", backgroundColor: "transparant" }}
+        sx={{ height: "260px", width: "100%", backgroundColor: "transparant" }}
       >
         <Box
           sx={{
@@ -40,6 +40,8 @@ export const ProfileCard: any = () => {
             flexWrap: "wrap",
             justifyContent: "space-between",
             alignContent: "center",
+            marginTop: "15px",
+            marginBottom: "-15px",
           }}
         >
           <Link to={`https://github.com/${gitUsername}`} target="_blank">
@@ -47,6 +49,7 @@ export const ProfileCard: any = () => {
               variant="contained"
               sx={{
                 borderRadius: "30px",
+                width: "135px",
                 marginLeft: "20px",
                 height: "fit-content",
                 background: "#2b3137",
@@ -69,6 +72,7 @@ export const ProfileCard: any = () => {
               variant="contained"
               sx={{
                 borderRadius: "30px",
+                width: "135px",
                 marginRight: "20px",
                 height: "fit-content",
                 background: "#0077B5",

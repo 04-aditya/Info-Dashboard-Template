@@ -1,5 +1,5 @@
 export const cardStyle = {
-  width: "27.75%",
+  width: "495px",
   margin: "15px",
   padding: "15px",
   boxShadow: "9",
@@ -11,7 +11,7 @@ export const cardStyle = {
 };
 
 export const graphCardStyle = {
-  width: "61.5%",
+  width: "55%",
   margin: "15px",
   padding: "15px",
   boxShadow: "9",
