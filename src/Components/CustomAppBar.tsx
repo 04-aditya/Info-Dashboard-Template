@@ -12,7 +12,7 @@ import {
 import icon from "../Assets/info.gif";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from "@mui/icons-material/Search";
-import profile from "../Assets/profile.jpg";
+import { gitAvatar } from "../LinksandUsernames";
 
 export const CustomAppBar: any = () => {
   return (
@@ -46,7 +46,7 @@ export const CustomAppBar: any = () => {
         >
           <TextField
             size="small"
-            color="success"
+            color="primary"
             placeholder="Search..."
             InputProps={{
               sx: {
@@ -60,11 +60,11 @@ export const CustomAppBar: any = () => {
             }}
           />
           <IconButton size="medium" color="default">
-            <Badge color="success" variant="dot">
+            <Badge color="primary" variant="dot">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <Avatar src={profile}></Avatar>
+          <Avatar src={gitAvatar}></Avatar>
         </Box>
       </Toolbar>
     </AppBar>

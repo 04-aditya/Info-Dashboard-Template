@@ -1,10 +1,13 @@
 import { Card, Box, Avatar, Button } from "@mui/material";
-import bannerImage from "../Assets/bannerImage.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
-import { linkedInUsername, gitUsername } from "../LinksandUsernames";
-import profile from "../Assets/profile.jpg";
+import {
+  linkedInUsername,
+  gitUsername,
+  gitAvatar,
+  profileBanner,
+} from "../LinksandUsernames";
 
 export const ProfileCard: any = () => {
   return (
@@ -22,8 +25,8 @@ export const ProfileCard: any = () => {
       }}
     >
       <img
-        src={bannerImage}
-        alt="bannerImage"
+        src={profileBanner}
+        alt="profileBanner"
         style={{ height: "140px", width: "495px" }}
       ></img>
       <Avatar
@@ -37,7 +40,7 @@ export const ProfileCard: any = () => {
             transform: "scale(1.2)",
           },
         }}
-        src={profile}
+        src={gitAvatar}
       />
       <Box
         sx={{ height: "260px", width: "100%", backgroundColor: "transparant" }}
@@ -102,10 +105,10 @@ export const ProfileCard: any = () => {
         <picture>
           <source
             media="(prefers-color-scheme: default)"
-            srcSet={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8`}
+            srcSet={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8`}
           />
           <img
-            src={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&mode=weekly&ring=39D0B8&fire=39D0B8`}
+            src={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8`}
             alt="githubstats"
           />
         </picture>
