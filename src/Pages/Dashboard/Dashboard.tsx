@@ -1,4 +1,4 @@
-import { Card, Toolbar, Avatar } from "@mui/material";
+import { Card, Toolbar, Avatar, Typography } from "@mui/material";
 import "./Dashboard.css";
 import { StackedAreaChartExample } from "../../ChartsandTables/StackedAreaChartExample";
 import { gitAvatar } from "../../LinksandUsernames";
@@ -15,15 +15,17 @@ export const Dashboard = () => {
           boxShadow: "9",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           borderRadius: "15px",
+          flexWrap: "wrap",
+          flexDirection: "column",
         }}
       >
         <Avatar
           sx={{
-            height: "110px",
-            width: "110px",
-
+            height: "100px",
+            width: "100px",
+            margin: "15px",
             boxShadow: "9",
             "&:hover": {
               transform: "scale(1.1)",
@@ -31,7 +33,9 @@ export const Dashboard = () => {
           }}
           src={gitAvatar}
         />
-        Aditya Banerjee
+        <Typography>Aditya Banerjee</Typography>
+
+        <Typography>Dummy Dashboard Card</Typography>
       </Card>
     </div>
   );
