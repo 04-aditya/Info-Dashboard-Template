@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
 import { Dashboard } from "./Pages/Dashboard/Dashboard";
 import { CustomAppBar } from "./Components/CustomAppBar";
-import { ThemeProvider } from "@mui/material";
+import { ThemeProvider, Toolbar } from "@mui/material";
 import { appTheme } from "./Theme";
+import { Profile } from "./Pages/Profile/Profile";
 
 function App() {
   return (
@@ -15,10 +16,14 @@ function App() {
         <BrowserRouter>
           <CustomAppBar />
           <CustomSideBar />
-          <Routes>
-            <Route path="/" Component={() => <Home />} />
-            <Route path="/dashboard" Component={() => <Dashboard />} />
-          </Routes>
+          <div style={{ marginLeft: "70px" }}>
+            <Toolbar />
+            <Routes>
+              <Route path="/" Component={() => <Home />} />
+              <Route path="/dashboard" Component={() => <Dashboard />} />
+              <Route path="/profile" Component={() => <Profile />} />
+            </Routes>
+          </div>
         </BrowserRouter>
       </ThemeProvider>
     </div>

@@ -1,4 +1,4 @@
-import { Card, Box, Avatar, Button } from "@mui/material";
+import { Box, Avatar, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
@@ -11,43 +11,38 @@ import {
 
 export const ProfileCard: any = () => {
   return (
-    <Card
+    <Box
       sx={{
-        width: "495px",
-        margin: "15px",
-        padding: "15px",
-        boxShadow: "9",
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: "15px",
       }}
     >
       <img
         src={profileBanner}
         alt="profileBanner"
-        style={{ height: "140px", width: "495px" }}
+        style={{ height: "160px", width: "100%" }}
       ></img>
       <Avatar
         sx={{
           position: "absolute",
-          height: "150px",
-          width: "150px",
+          height: "160px",
+          width: "160px",
           marginTop: "-150px",
           boxShadow: "9",
           "&:hover": {
-            transform: "scale(1.2)",
+            transform: "scale(1.15)",
           },
         }}
         src={gitAvatar}
       />
       <Box
-        sx={{ height: "260px", width: "100%", backgroundColor: "transparant" }}
+        sx={{ height: "240px", width: "100%", backgroundColor: "transparant" }}
       >
         <Box
           sx={{
-            height: "70px",
+            height: "50px",
             width: "100%",
             backgroundColor: "transparant",
             display: "flex",
@@ -64,7 +59,7 @@ export const ProfileCard: any = () => {
               sx={{
                 borderRadius: "30px",
                 width: "135px",
-                marginLeft: "20px",
+                marginLeft: "45px",
                 height: "fit-content",
                 background: "#2b3137",
                 color: "white",
@@ -87,7 +82,7 @@ export const ProfileCard: any = () => {
               sx={{
                 borderRadius: "30px",
                 width: "135px",
-                marginRight: "20px",
+                marginRight: "45px",
                 height: "fit-content",
                 background: "#0077B5",
                 color: "white",
@@ -105,14 +100,14 @@ export const ProfileCard: any = () => {
         <picture>
           <source
             media="(prefers-color-scheme: default)"
-            srcSet={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8`}
+            srcSet={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8&card_width=650`}
           />
           <img
-            src={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8`}
+            src={`https://streak-stats.demolab.com?user=${gitUsername}&theme=graywhite&hide_border=true&border_radius=0&ring=39D0B8&fire=39D0B8&card_width=583.38`}
             alt="githubstats"
           />
         </picture>
       </Box>
-    </Card>
+    </Box>
   );
 };

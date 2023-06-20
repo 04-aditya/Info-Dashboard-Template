@@ -1,42 +1,70 @@
-import { Card, Toolbar, Avatar, Typography } from "@mui/material";
+import { Card } from "@mui/material";
 import "./Dashboard.css";
 import { StackedAreaChartExample } from "../../ChartsandTables/StackedAreaChartExample";
-import { gitAvatar } from "../../LinksandUsernames";
+import { ProfileCard } from "../../Components/ProfileCard";
+import { DataTableExample } from "../../ChartsandTables/DataTableExample";
+import { PieChartExample } from "../../ChartsandTables/PieChartExample";
 
 export const Dashboard = () => {
   return (
-    <div className="Dashboard">
-      <Toolbar />
-      <Card
-        sx={{
-          width: "90%",
-          margin: "15px",
-          padding: "15px",
-          boxShadow: "9",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-start",
-          borderRadius: "15px",
-          flexWrap: "wrap",
-          flexDirection: "column",
-        }}
-      >
-        <Avatar
+    <div>
+      <div className="Dashboard">
+        <Card
           sx={{
-            height: "100px",
-            width: "100px",
+            width: "45%",
             margin: "15px",
+            padding: "15px",
             boxShadow: "9",
-            "&:hover": {
-              transform: "scale(1.1)",
-            },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "15px",
           }}
-          src={gitAvatar}
-        />
-        <Typography>Aditya Banerjee</Typography>
+        >
+          <StackedAreaChartExample />
+        </Card>
+        <Card
+          sx={{
+            width: "45%",
+            margin: "15px",
+            padding: "15px",
+            boxShadow: "9",
 
-        <Typography>Dummy Dashboard Card</Typography>
-      </Card>
+            borderRadius: "15px",
+          }}
+        >
+          <ProfileCard />
+        </Card>
+
+        <Card
+          sx={{
+            width: "45%",
+            margin: "15px",
+            padding: "15px",
+            boxShadow: "9",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "15px",
+          }}
+        >
+          <DataTableExample />
+        </Card>
+        <Card
+          sx={{
+            width: "45%",
+            margin: "15px",
+            padding: "15px",
+            boxShadow: "9",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "15px",
+          }}
+        >
+          <PieChartExample />
+        </Card>
+      </div>
     </div>
   );
 };

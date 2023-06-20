@@ -1,8 +1,9 @@
-/* Dashboard styles css defined here */
+/* Dashboard page styles css defined here */
 .Dashboard {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
 }

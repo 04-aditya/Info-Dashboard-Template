@@ -1,18 +1,17 @@
 import {
   AppBar,
   Avatar,
-  Badge,
   Box,
-  IconButton,
   InputAdornment,
   TextField,
   Toolbar,
   Typography,
 } from "@mui/material";
 import icon from "../Assets/info.gif";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+
 import SearchIcon from "@mui/icons-material/Search";
 import { gitAvatar } from "../LinksandUsernames";
+import { NotificationDrawer } from "./NotificationDrawer";
 
 export const CustomAppBar: any = () => {
   return (
@@ -38,7 +37,7 @@ export const CustomAppBar: any = () => {
           sx={{
             width: "400px",
             position: "fixed",
-            right: "30px",
+            right: "20px",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-evenly",
@@ -59,11 +58,7 @@ export const CustomAppBar: any = () => {
               ),
             }}
           />
-          <IconButton size="medium" color="default">
-            <Badge color="primary" variant="dot">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <NotificationDrawer />
           <Avatar src={gitAvatar}></Avatar>
         </Box>
       </Toolbar>
