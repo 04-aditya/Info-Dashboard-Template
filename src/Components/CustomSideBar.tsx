@@ -16,6 +16,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import { Link } from "react-router-dom";
+import { appTheme } from "../Theme";
 
 const drawerWidth = 240;
 const openedMixin = (theme: Theme): CSSObject => ({
@@ -82,7 +83,7 @@ export default function CustomSideBar() {
     "teams",
     "developersettings",
   ];
-
+  let currentPath = window.location.pathname;
   return (
     <Drawer
       variant="permanent"
@@ -99,7 +100,6 @@ export default function CustomSideBar() {
               disablePadding
               sx={{ display: "block" }}
               component={Link}
-              // to={text == "Home" ? "/" : "/" + text}
               to={pathsArray[index]}
             >
               <ListItemButton
@@ -107,6 +107,9 @@ export default function CustomSideBar() {
                   minHeight: 48,
                   justifyContent: open ? "initial" : "center",
                   px: 2.5,
+                  backgroundColor: currentPath.endsWith(pathsArray[index])
+                    ? appTheme.palette.primary.main
+                    : "white",
                 }}
               >
                 <ListItemIcon
