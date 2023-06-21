@@ -52,5 +52,3 @@ export const Profile = () => {
     </div>
   );
 };
-
-// https://drive.google.com/file/d/1cMe-aVsSEaDoYiivvwVTqkTtPst6O7Db/view?usp=sharing
