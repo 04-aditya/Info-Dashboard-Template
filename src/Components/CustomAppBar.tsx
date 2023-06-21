@@ -7,7 +7,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import icon from "../Assets/info.gif";
+import icon from "../Assets/info.png";
 
 import SearchIcon from "@mui/icons-material/Search";
 import { gitAvatar } from "../LinksandUsernames";
