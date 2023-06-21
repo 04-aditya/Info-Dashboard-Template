@@ -1,7 +1,6 @@
 # A Basic Information Dashboard Template
 
 This project is an attempt to make a basic template of a dashboard design to showcase various information through tabs and cards.
-This template includes Material UI components, and the navigation is done through react-router-dom.\
 \
 It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
 Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) for the streak widget which is part of the profile card.\
@@ -9,13 +8,21 @@ Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-str
 All profile references can be found in the
 [LinksandUsernames.ts](src/LinksandUsernames.ts) file and can be changed to show relevant data to you.
 
-## Current App Status - 20th June, 2023
+## Current App Status - 21st June, 2023
 
-So far, only the home page has relevant components which you can see from the screenshot below. The routing has been implemented but no components exist in the other pages yet.
+So far, the home, dashboard, and profile pages have relevant components which you can see from the screenshots below. The routing has been implemented but no components exist in the other pages yet.
 
 <p align="center">
-  <img src="./public/20thJuneInfoDash.jpeg" alt="Home Page"/>
-  Info Dashboard - Home Page 
+  <img src="./public/HomePage.jpeg" alt="Home Page"/>
+  Home Page 
+</p>
+<p align="center">
+  <img src="./public/DashboardPage.jpeg" alt="Dashboard Page"/>
+  Dashboard Page 
+</p>
+<p align="center">
+  <img src="./public/ProfilePage.jpg" alt="Profile Page"/>
+  Profile Page 
 </p>
 
 ## Pre-requisites
