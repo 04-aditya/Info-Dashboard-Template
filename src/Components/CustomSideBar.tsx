@@ -76,13 +76,7 @@ export default function CustomSideBar() {
     <ExtensionIcon />,
   ];
 
-  const pathsArray = [
-    "/",
-    "dashboard",
-    "profile",
-    "teams",
-    "developersettings",
-  ];
+  const pathsArray = ["/", "dashboard", "profile", "team", "developersettings"];
   let currentPath = window.location.pathname;
   return (
     <Drawer
@@ -93,7 +87,7 @@ export default function CustomSideBar() {
     >
       <Toolbar />
       <List>
-        {["Home", "Dashboard", "Profile", "Teams", "Developer Settings"].map(
+        {["Home", "Dashboard", "Profile", "Team", "Developer Settings"].map(
           (text, index) => (
             <ListItem
               key={text}

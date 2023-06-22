@@ -1,0 +1,9 @@
+/* Dashboard page styles css defined here */
+.Team {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}

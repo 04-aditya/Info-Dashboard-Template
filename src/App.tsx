@@ -8,6 +8,7 @@ import { CustomAppBar } from "./Components/CustomAppBar";
 import { ThemeProvider, Toolbar } from "@mui/material";
 import { appTheme } from "./Theme";
 import { Profile } from "./Pages/Profile/Profile";
+import { Team } from "./Pages/Team/Team";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" Component={() => <Home />} />
               <Route path="/dashboard" Component={() => <Dashboard />} />
               <Route path="/profile" Component={() => <Profile />} />
+              <Route path="/team" Component={() => <Team />} />
             </Routes>
           </div>
         </BrowserRouter>
