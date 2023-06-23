@@ -22,7 +22,7 @@ export const ProfileCard: any = () => {
       <img
         src={profileBanner}
         alt="profileBanner"
-        style={{ height: "160px", width: "100%" }}
+        style={{ height: "177px", width: "100%" }}
       ></img>
       <Avatar
         sx={{
@@ -38,7 +38,7 @@ export const ProfileCard: any = () => {
         src={gitAvatar}
       />
       <Box
-        sx={{ height: "240px", width: "100%", backgroundColor: "transparant" }}
+        sx={{ height: "247px", width: "100%", backgroundColor: "transparant" }}
       >
         <Box
           sx={{

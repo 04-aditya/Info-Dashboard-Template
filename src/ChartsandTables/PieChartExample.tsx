@@ -20,9 +20,8 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 export const PieChartExample = () => {
   return (
     <div style={{ width: "100%", height: "400px" }}>
-      <Typography>Dummy Pie Chart</Typography>
-      <ResponsiveContainer width="100%" height={380}>
-        <PieChart width={400} height={380}>
+      <ResponsiveContainer width="100%" height={400}>
+        <PieChart width={400} height={400}>
           <Pie
             data={data}
             cx="50%"

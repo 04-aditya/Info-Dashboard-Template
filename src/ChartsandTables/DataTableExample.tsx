@@ -38,15 +38,14 @@ const rows = [
 
 export const DataTableExample = () => {
   return (
-    <div style={{ width: "100%", height: "400px" }}>
-      <Typography>Dummy Data Table</Typography>
+    <div style={{ width: "100%", height: "380px" }}>
       <DataGrid
         sx={{
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: appTheme.palette.primary.dark,
             color: "white",
           },
-          height: "360px",
+          height: "380px",
           marginTop: "20px",
         }}
         rows={rows}

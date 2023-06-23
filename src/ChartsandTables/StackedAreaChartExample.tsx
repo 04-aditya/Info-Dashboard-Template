@@ -59,11 +59,10 @@ const data = [
 export const StackedAreaChartExample = () => {
   return (
     <div style={{ width: "100%", height: "400px" }}>
-      <Typography>Dummy Area Chart</Typography>
-      <ResponsiveContainer width="100%" height={380}>
+      <ResponsiveContainer width="100%" height={400}>
         <AreaChart
           width={900}
-          height={380}
+          height={400}
           data={data}
           margin={{
             top: 25,
