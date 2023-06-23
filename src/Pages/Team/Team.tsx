@@ -1,16 +1,14 @@
 import {
-  Box,
   Card,
   FormControl,
   InputLabel,
   MenuItem,
   Tab,
   Tabs,
-  Typography,
 } from "@mui/material";
 import "./Team.css";
 import { StackedAreaChartExample } from "../../ChartsandTables/StackedAreaChartExample";
-import { ProfileCard } from "../../Components/ProfileCard";
+
 import { DataTableExample } from "../../ChartsandTables/DataTableExample";
 import { PieChartExample } from "../../ChartsandTables/PieChartExample";
 import React from "react";
