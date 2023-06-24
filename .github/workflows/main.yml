@@ -12,16 +12,12 @@ on:
 
 jobs:
   # Contains a single job called "build"
-  check:
+  deployment-check:
     runs-on: ubuntu-latest
     steps:
       # Checks out repository under $GITHUB_WORKSPACE, so job can access it
       - uses: actions/checkout@v2
 
-      - name: Run a one-line script
+      - name: Run deployment check
         run: echo Hello, world!
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
