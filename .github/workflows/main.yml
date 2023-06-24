@@ -3,9 +3,9 @@ name: Test
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,9 +23,6 @@ jobs:
         run: |
           CODE=`curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-template.netlify.app/`\
           if [ $CODE!="200" ] 
-          then
-              echo "FAILURE"
-          else
-              echo "SUCCESS"
+          then echo "FAILURE"
+          else echo "SUCCESS"
           fi
-
