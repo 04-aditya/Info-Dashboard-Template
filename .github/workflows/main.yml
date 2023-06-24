@@ -22,7 +22,7 @@ jobs:
         id: deployment-check
         run: curl -I https://info-dashboard-template.netlify.app/
         
-#     - name: Return Status check
-#         if: steps.deployment-check.outcome != '200'
-#         run: exit 1
+      - name: Return Status check
+        if: contains(steps.deployment-check.outcome, 'HTTP/2 200')
+        run: echo 'SUCCESS'
 
