@@ -21,7 +21,7 @@ jobs:
       - name: Run deployment check
         id: deployment-check
         run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-template.netlify.app/)
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-sehsrgh.netlify.app/)
           if [[ $code != 200 ]]; then
             exit 1
           fi
