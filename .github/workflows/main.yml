@@ -20,7 +20,7 @@ jobs:
 
       - name: Run deployment check
         id: deployment-check
-        run: if [ curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-template.netlify.app/ ] != '200' then exit 1
+        run: if [ curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-template.netlify.app/ ] != '200' then exit 1 fi
 
       # - name: Check status
       #   if: steps.deployment-check.outcome != '200'
