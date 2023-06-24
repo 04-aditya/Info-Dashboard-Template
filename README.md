@@ -10,7 +10,7 @@ All profile references can be found in the
 
 ## Current App Status - 21st June, 2023
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e91a0f9a-6283-4073-94e1-5f162c8785a2/deploy-status)](https://app.netlify.com/sites/info-dashboard-template/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9d521f10-a89e-4636-964d-51f1431a8427/deploy-status)](https://app.netlify.com/sites/info-dashboard-template/deploys)
 
 So far, the home, dashboard, and profile pages have relevant components which you can see from the screenshots below. The routing has been implemented but no components exist in the other pages yet.
 
