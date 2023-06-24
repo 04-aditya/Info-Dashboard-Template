@@ -12,6 +12,8 @@ All profile references can be found in the
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d521f10-a89e-4636-964d-51f1431a8427/deploy-status)](https://app.netlify.com/sites/info-dashboard-template/deploys)
 
+[![Netlify Deployment Status Check - Github Actions](https://github.com/04-aditya/Info-Dashboard-Template/actions/workflows/main.yml/badge.svg)](https://github.com/04-aditya/Info-Dashboard-Template/actions/workflows/main.yml)
+
 So far, the home, dashboard, and profile pages have relevant components which you can see from the screenshots below. The routing has been implemented but no components exist in the other pages yet.
 
 <p align="center">
