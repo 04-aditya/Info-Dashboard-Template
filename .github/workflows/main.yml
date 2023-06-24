@@ -12,7 +12,7 @@ on:
 
 jobs:
   # Contains a single job called "build"
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       # Checks out repository under $GITHUB_WORKSPACE, so job can access it
