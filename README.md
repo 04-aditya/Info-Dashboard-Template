@@ -1,20 +1,24 @@
 # A Basic Information Dashboard Template
 
-This project is an attempt to make a basic template of a dashboard design to showcase various information through tabs and cards.
+This project is a very basic template of a dashboard design to showcase various information through tabs and cards. It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
 \
-It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
 Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) for the streak widget which is part of the profile card.\
 \
 All profile references can be found in the
 [LinksandUsernames.ts](src/LinksandUsernames.ts) file and can be changed to show relevant data to you.
 
-## Current App Status - 21st June, 2023
+## Current App Status - 24th June, 2023
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9d521f10-a89e-4636-964d-51f1431a8427/deploy-status)](https://app.netlify.com/sites/info-dashboard-template/deploys)
+The app development has been finished, and can be found [here](https://info-dashboard-template.netlify.app/). The final application is deployed using Netlify, and the status of the deployment and other statuses/stats can be seen through the badge below.
 
-[![Netlify Deployment Status Check - Github Actions](https://github.com/04-aditya/Info-Dashboard-Template/actions/workflows/main.yml/badge.svg)](https://github.com/04-aditya/Info-Dashboard-Template/actions/workflows/main.yml)
+<p align="center">
+<img alt="Netlify" src="https://img.shields.io/netlify/9d521f10-a89e-4636-964d-51f1431a8427?style=for-the-badge&logo=netlify&logoColor=white&labelColor=%23525b61&color=%23bef9c5">
+<img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/04-aditya/Info-Dashboard-Template/main.yml?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=black">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/04-aditya/Info-Dashboard-Template?style=for-the-badge&logo=typescript&labelColor=white">
+<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/04-aditya/Info-Dashboard-Template?style=for-the-badge&logo=github&color=white">
+</p>
 
-So far, the home, dashboard, and profile pages have relevant components which you can see from the screenshots below. The routing has been implemented but no components exist in the other pages yet.
+All screenshots for all pages can be found below.
 
 <p align="center">
   <img src="./public/HomePage.jpeg" alt="Home Page"/>
@@ -27,6 +31,14 @@ So far, the home, dashboard, and profile pages have relevant components which yo
 <p align="center">
   <img src="./public/ProfilePage.jpg" alt="Profile Page"/>
   Profile Page 
+</p>
+<p align="center">
+  <img src="./public/TeamPage.jpeg" alt="Team Page"/>
+  Team Page 
+</p>
+<p align="center">
+  <img src="./public/ErrorPage.jpeg" alt="Error Page"/>
+  Error Page 
 </p>
 
 ## Pre-requisites
@@ -45,17 +57,3 @@ Installs all the dependencies and required libraries in your local repository to
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

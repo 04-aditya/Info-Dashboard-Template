@@ -8,6 +8,7 @@ import {
   gitAvatar,
   profileBanner,
 } from "../LinksandUsernames";
+import { appTheme } from "../Theme";
 
 export const ProfileCard: any = () => {
   return (
@@ -64,7 +65,7 @@ export const ProfileCard: any = () => {
                 background: "#2b3137",
                 color: "white",
                 "&:hover": {
-                  backgroundColor: "#39D0B8",
+                  backgroundColor: appTheme.palette.primary.main,
                   color: "black",
                 },
               }}
@@ -87,7 +88,7 @@ export const ProfileCard: any = () => {
                 background: "#0077B5",
                 color: "white",
                 "&:hover": {
-                  backgroundColor: "#39D0B8",
+                  backgroundColor: appTheme.palette.primary.main,
                   color: "black",
                 },
               }}

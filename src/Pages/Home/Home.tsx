@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import homeIllustrion from "../../Assets/home-illustration.svg";
+import { appTheme } from "../../Theme";
 
 export const Home = () => {
   return (
@@ -19,8 +20,8 @@ export const Home = () => {
       </Typography>
       <div className="Body">
         <Typography>
-          This project is an attempt to make a basic template of a dashboard
-          design to showcase various information through tabs and cards.{" "}
+          This project is a very basic template of a dashboard design to
+          showcase various information through tabs and cards.{" "}
         </Typography>
         <Typography>
           It includes data about several professional profiles (eg. Github and
@@ -48,7 +49,7 @@ export const Home = () => {
             background: "#2b3137",
             color: "white",
             "&:hover": {
-              backgroundColor: "#39D0B8",
+              backgroundColor: appTheme.palette.primary.main,
               color: "black",
             },
           }}
