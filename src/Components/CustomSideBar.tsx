@@ -76,7 +76,7 @@ export default function CustomSideBar() {
     <ExtensionIcon />,
   ];
 
-  const pathsArray = ["/", "dashboard", "profile", "team", "developersettings"];
+  const pathsArray = ["/", "dashboard", "profile", "team"];
   let currentPath = window.location.pathname;
   return (
     <Drawer
@@ -87,45 +87,43 @@ export default function CustomSideBar() {
     >
       <Toolbar />
       <List>
-        {["Home", "Dashboard", "Profile", "Team", "Developer Settings"].map(
-          (text, index) => (
-            <ListItem
-              key={text}
-              disablePadding
-              sx={{ display: "block" }}
-              component={Link}
-              to={pathsArray[index]}
+        {["Home", "Dashboard", "Profile", "Team"].map((text, index) => (
+          <ListItem
+            key={text}
+            disablePadding
+            sx={{ display: "block" }}
+            component={Link}
+            to={pathsArray[index]}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+                backgroundColor: currentPath.endsWith(pathsArray[index])
+                  ? appTheme.palette.primary.main
+                  : "white",
+              }}
             >
-              <ListItemButton
+              <ListItemIcon
                 sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                  backgroundColor: currentPath.endsWith(pathsArray[index])
-                    ? appTheme.palette.primary.main
-                    : "white",
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
                 }}
               >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  {iconArray[index]}
-                </ListItemIcon>
-                <ListItemText
-                  primary={text}
-                  sx={{
-                    opacity: open ? 1 : 0,
-                    color: "black",
-                  }}
-                />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+                {iconArray[index]}
+              </ListItemIcon>
+              <ListItemText
+                primary={text}
+                sx={{
+                  opacity: open ? 1 : 0,
+                  color: "black",
+                }}
+              />
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
       <Divider />
     </Drawer>

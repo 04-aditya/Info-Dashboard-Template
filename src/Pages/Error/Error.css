@@ -1,0 +1,13 @@
+/* Home page styles css defined here */
+.Home {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Body {
+  margin-top: 20px;
+  color: #9e9e9e;
+}

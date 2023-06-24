@@ -9,7 +9,7 @@ import { ThemeProvider, Toolbar } from "@mui/material";
 import { appTheme } from "./Theme";
 import { Profile } from "./Pages/Profile/Profile";
 import { Team } from "./Pages/Team/Team";
-import { DevSettings } from "./Pages/DevSettings/DevSettings";
+import { Error } from "./Pages/Error/Error";
 
 function App() {
   return (
@@ -25,10 +25,7 @@ function App() {
               <Route path="/dashboard" Component={() => <Dashboard />} />
               <Route path="/profile" Component={() => <Profile />} />
               <Route path="/team" Component={() => <Team />} />
-              <Route
-                path="/developersettings"
-                Component={() => <DevSettings />}
-              />
+              <Route path="*" Component={() => <Error />} />
             </Routes>
           </div>
         </BrowserRouter>

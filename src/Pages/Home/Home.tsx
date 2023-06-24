@@ -12,7 +12,7 @@ export const Home = () => {
         alt="home-illustration"
         width="400px"
         height="400px"
-        style={{ marginTop: "45px", marginBottom: "25px" }}
+        style={{ marginTop: "20px", marginBottom: "20px" }}
       ></img>
       <Typography variant="h4" fontFamily="serif">
         Welcome to Info Dashboard Template
