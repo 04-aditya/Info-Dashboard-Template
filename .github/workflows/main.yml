@@ -22,7 +22,4 @@ jobs:
         id: deployment-check
         run: |
           CODE=`curl -s -o /dev/null -w "%{http_code}" https://info-dashboard-template.netlify.app/`\
-          if [ $CODE!="200" ] 
-          then echo "FAILURE"
-          else echo "SUCCESS"
-          fi
+          if [ $CODE!="200" ]; then echo "FAILURE"; else echo "SUCCESS"; fi
