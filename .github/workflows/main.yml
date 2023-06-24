@@ -19,5 +19,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run deployment check
-        run: curl -is https://stackoverflow.com/questions/madeupquestion/example | head -n 1
+        id: deployment-check
+        run: curl https://info-dashboard-template.netlify.app/
+        
+      - name: Return Status check
+        if: steps.deployment-check.outcome != '200'
+        run: exit 1
 
