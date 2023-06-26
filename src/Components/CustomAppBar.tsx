@@ -18,7 +18,7 @@ export const CustomAppBar: any = () => {
     <AppBar
       position="fixed"
       color="inherit"
-      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, boxShadow: "2" }}
     >
       <Toolbar>
         <img

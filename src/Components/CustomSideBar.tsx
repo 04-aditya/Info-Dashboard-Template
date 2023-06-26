@@ -7,7 +7,6 @@ import {
   ListItemIcon,
   ListItemButton,
   ListItem,
-  Divider,
   List,
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
@@ -18,13 +17,14 @@ import ExtensionIcon from "@mui/icons-material/Extension";
 import { Link } from "react-router-dom";
 import { appTheme } from "../Theme";
 
-const drawerWidth = 240;
+const drawerWidth = 220;
 const openedMixin = (theme: Theme): CSSObject => ({
   width: drawerWidth,
   transition: theme.transitions.create("width", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.enteringScreen,
   }),
+  borderColor: appTheme.palette.primary.main,
   overflowX: "hidden",
 });
 
@@ -34,9 +34,10 @@ const closedMixin = (theme: Theme): CSSObject => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: "hidden",
-  width: `calc(${theme.spacing(7)} + 1px)`,
+  borderColor: appTheme.palette.primary.main,
+  width: `calc(${theme.spacing(7)} + 20px)`,
   [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(8)} + 1px)`,
+    width: `calc(${theme.spacing(8)} + 20px)`,
   },
 });
 
@@ -81,6 +82,7 @@ export default function CustomSideBar() {
   return (
     <Drawer
       variant="permanent"
+      anchor="left"
       open={open}
       onMouseOver={handleDrawerOpen}
       onMouseLeave={handleDrawerClose}
@@ -97,8 +99,11 @@ export default function CustomSideBar() {
           >
             <ListItemButton
               sx={{
+                margin: "10px",
+
+                borderRadius: "15px",
                 minHeight: 48,
-                justifyContent: open ? "initial" : "center",
+                justifyContent: open ? "initial" : "initial",
                 px: 2.5,
                 backgroundColor: currentPath.endsWith(pathsArray[index])
                   ? appTheme.palette.primary.main
@@ -108,7 +113,7 @@ export default function CustomSideBar() {
               <ListItemIcon
                 sx={{
                   minWidth: 0,
-                  mr: open ? 3 : "auto",
+
                   justifyContent: "center",
                 }}
               >
@@ -117,6 +122,7 @@ export default function CustomSideBar() {
               <ListItemText
                 primary={text}
                 sx={{
+                  ml: open ? 3 : "auto",
                   opacity: open ? 1 : 0,
                   color: "black",
                 }}
@@ -125,7 +131,6 @@ export default function CustomSideBar() {
           </ListItem>
         ))}
       </List>
-      <Divider />
     </Drawer>
   );
 }

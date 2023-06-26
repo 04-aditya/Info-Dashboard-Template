@@ -11,11 +11,11 @@ export const Dashboard = () => {
       <div className="Dashboard">
         <Card
           sx={{
-            width: "45%",
+            width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "9",
-
+            boxShadow: "5",
+            minWidth: "583.38px",
             borderRadius: "15px",
           }}
         >
@@ -24,11 +24,11 @@ export const Dashboard = () => {
         </Card>
         <Card
           sx={{
-            width: "45%",
+            width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "9",
-
+            boxShadow: "5",
+            minWidth: "583.38px",
             borderRadius: "15px",
           }}
         >
@@ -37,11 +37,11 @@ export const Dashboard = () => {
 
         <Card
           sx={{
-            width: "45%",
+            width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "9",
-
+            boxShadow: "5",
+            minWidth: "583.38px",
             borderRadius: "15px",
           }}
         >
@@ -50,11 +50,11 @@ export const Dashboard = () => {
         </Card>
         <Card
           sx={{
-            width: "45%",
+            width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "9",
-
+            boxShadow: "5",
+            minWidth: "583.38px",
             borderRadius: "15px",
           }}
         >

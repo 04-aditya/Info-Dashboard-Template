@@ -25,7 +25,7 @@ function App() {
               <Route path="/dashboard" Component={() => <Dashboard />} />
               <Route path="/profile" Component={() => <Profile />} />
               <Route path="/team" Component={() => <Team />} />
-              <Route path="*" Component={() => <Error />} />
+              <Route path="/error" Component={() => <Error />} />
             </Routes>
           </div>
         </BrowserRouter>
