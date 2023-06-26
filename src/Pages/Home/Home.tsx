@@ -33,7 +33,8 @@ export const Home = () => {
           charts and tables scattered around as well.
         </Typography>
         <Typography>
-          In case of any problems, please go through the README of this project.
+          In case of any problems, please go through the README of this project
+          using the button below.
         </Typography>
       </div>
       <Link
