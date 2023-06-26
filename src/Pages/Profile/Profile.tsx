@@ -30,6 +30,7 @@ export const Profile = () => {
             },
           }}
           src={gitAvatar}
+          alt="avatar"
         />
         <Typography>Aditya Banerjee</Typography>
 

@@ -20,7 +20,7 @@ export const NotificationDrawer = () => {
 
   return (
     <div>
-      <IconButton size="medium" color="default">
+      <IconButton size="medium" color="default" aria-label="notifications">
         <Badge color="primary" variant="dot" onClick={handleClick}>
           <NotificationsIcon />
         </Badge>

@@ -38,9 +38,10 @@ export const CustomAppBar: any = () => {
         >
           <img
             src={icon}
-            alt=""
+            alt="icon"
             style={{
               height: "50px",
+              width: "50px",
               marginLeft: "-5px",
               marginRight: "20px",
               alignSelf: "center",
@@ -83,7 +84,7 @@ export const CustomAppBar: any = () => {
             }}
           />
           <NotificationDrawer />
-          <Avatar src={gitAvatar}></Avatar>
+          <Avatar src={gitAvatar} alt="avatar"></Avatar>
         </Box>
       </Toolbar>
     </AppBar>

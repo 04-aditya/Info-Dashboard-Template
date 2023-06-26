@@ -37,6 +37,7 @@ export const ProfileCard: any = () => {
           },
         }}
         src={gitAvatar}
+        alt="avatar"
       />
       <Box
         sx={{ height: "247px", width: "100%", backgroundColor: "transparant" }}

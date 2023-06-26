@@ -1,6 +1,9 @@
 name: Netlify Deployment Status Check
 
 on:
+  push:
+    branches:
+      - "main"
   workflow_dispatch:
 
 jobs:
