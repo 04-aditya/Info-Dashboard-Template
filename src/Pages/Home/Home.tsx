@@ -40,6 +40,7 @@ export const Home = () => {
       <Link
         to={`https://github.com/04-aditya/Info-Dashboard-Template`}
         target="_blank"
+        style={{ textDecoration: "none" }}
       >
         <Button
           variant="contained"

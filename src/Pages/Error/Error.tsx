@@ -28,7 +28,7 @@ export const Error = () => {
           home page using the button below.
         </Typography>
       </div>
-      <Link to={appHostLink}>
+      <Link to={appHostLink} style={{ textDecoration: "none" }}>
         <Button
           variant="contained"
           sx={{

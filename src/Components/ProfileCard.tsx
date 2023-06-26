@@ -55,7 +55,11 @@ export const ProfileCard: any = () => {
             marginBottom: "-15px",
           }}
         >
-          <Link to={`https://github.com/${gitUsername}`} target="_blank">
+          <Link
+            to={`https://github.com/${gitUsername}`}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
             <Button
               variant="contained"
               sx={{
@@ -78,6 +82,7 @@ export const ProfileCard: any = () => {
           <Link
             to={`https://www.linkedin.com/in/${linkedInUsername}`}
             target="_blank"
+            style={{ textDecoration: "none" }}
           >
             <Button
               variant="contained"
