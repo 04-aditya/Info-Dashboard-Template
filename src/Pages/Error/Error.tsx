@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import errorIllustration from "../../Assets/error-illustration.svg";
 import { appTheme } from "../../Theme";
+import { appHostLink } from "../../LinksandUsernames";
 
 export const Error = () => {
   return (
@@ -27,7 +28,7 @@ export const Error = () => {
           home page using the button below.
         </Typography>
       </div>
-      <Link to={"/"}>
+      <Link to={appHostLink}>
         <Button
           variant="contained"
           sx={{
