@@ -14,7 +14,7 @@ export const Dashboard = () => {
             width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "5",
+            boxShadow: "3",
             minWidth: "583.38px",
             borderRadius: "15px",
           }}
@@ -27,7 +27,7 @@ export const Dashboard = () => {
             width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "5",
+            boxShadow: "3",
             minWidth: "583.38px",
             borderRadius: "15px",
           }}
@@ -40,7 +40,7 @@ export const Dashboard = () => {
             width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "5",
+            boxShadow: "3",
             minWidth: "583.38px",
             borderRadius: "15px",
           }}
@@ -53,7 +53,7 @@ export const Dashboard = () => {
             width: "40%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "5",
+            boxShadow: "3",
             minWidth: "583.38px",
             borderRadius: "15px",
           }}

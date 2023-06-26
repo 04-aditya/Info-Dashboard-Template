@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <CustomAppBar />
           <CustomSideBar />
-          <div style={{ marginLeft: "70px" }}>
+          <div style={{ marginLeft: "90px" }}>
             <Toolbar />
             <Routes>
               <Route path="/" Component={() => <Home />} />

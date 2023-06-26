@@ -10,7 +10,7 @@ export const Profile = () => {
           width: "90%",
           margin: "15px",
           padding: "15px",
-          boxShadow: "9",
+          boxShadow: "3",
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",

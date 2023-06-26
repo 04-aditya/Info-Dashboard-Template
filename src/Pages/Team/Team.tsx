@@ -73,7 +73,7 @@ export const Team = () => {
             width: "90%",
             margin: "15px",
             padding: "15px",
-            boxShadow: "9",
+            boxShadow: "3",
             borderRadius: "15px",
           }}
         >
@@ -91,7 +91,7 @@ export const Team = () => {
                 position: "fixed",
                 right: "5%",
                 marginTop: "-80px",
-                width: "250px",
+                width: "15%",
               }}
             >
               <InputLabel id="chart-select-label"></InputLabel>
@@ -99,6 +99,7 @@ export const Team = () => {
                 id="chart-select"
                 value={chartType}
                 onChange={handleChartChange}
+                sx={{ textAlign: "left" }}
               >
                 <MenuItem disabled value="">
                   <em>Chart Type</em>
@@ -118,7 +119,7 @@ export const Team = () => {
                 position: "fixed",
                 right: "5%",
                 marginTop: "-80px",
-                width: "250px",
+                width: "15%",
               }}
             >
               <InputLabel id="table-select-label"></InputLabel>
@@ -126,6 +127,7 @@ export const Team = () => {
                 id="table-select"
                 value={tableType}
                 onChange={handleTableChange}
+                sx={{ textAlign: "left" }}
               >
                 <MenuItem disabled value="">
                   <em>Table Data Type</em>

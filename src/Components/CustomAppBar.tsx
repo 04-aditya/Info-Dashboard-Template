@@ -18,29 +18,52 @@ export const CustomAppBar: any = () => {
     <AppBar
       position="fixed"
       color="inherit"
-      sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, boxShadow: "2" }}
+      sx={{
+        zIndex: (theme) => theme.zIndex.drawer + 1,
+        boxShadow: "2",
+      }}
     >
-      <Toolbar>
-        <img
-          src={icon}
-          alt=""
-          style={{
-            height: "50px",
-            marginLeft: "-15px",
-            marginRight: "15px",
-          }}
-        />
-        <Typography variant="h6" noWrap component="div">
-          Info Dashboard Template
-        </Typography>
+      <Toolbar
+        sx={{
+          width: "100%",
+          justifyContent: "space-between",
+        }}
+      >
         <Box
           sx={{
-            width: "400px",
-            position: "fixed",
-            right: "20px",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-evenly",
+          }}
+        >
+          <img
+            src={icon}
+            alt=""
+            style={{
+              height: "50px",
+              marginLeft: "-5px",
+              marginRight: "20px",
+              alignSelf: "center",
+            }}
+          />
+
+          <Typography
+            variant="h5"
+            component="div"
+            fontFamily="serif"
+            alignSelf="center"
+          >
+            Info Dashboard Template
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            width: "25%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            marginRight: "3%",
+            minWidth: "150px",
           }}
         >
           <TextField
@@ -50,6 +73,7 @@ export const CustomAppBar: any = () => {
             InputProps={{
               sx: {
                 borderRadius: "15px",
+                minWidth: "50px",
               },
               startAdornment: (
                 <InputAdornment position="start">
