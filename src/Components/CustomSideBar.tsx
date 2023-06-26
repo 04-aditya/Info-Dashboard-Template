@@ -34,7 +34,6 @@ const closedMixin = (theme: Theme): CSSObject => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: "hidden",
-  borderColor: appTheme.palette.primary.main,
   width: `calc(${theme.spacing(7)} + 20px)`,
   [theme.breakpoints.up("sm")]: {
     width: `calc(${theme.spacing(8)} + 20px)`,
