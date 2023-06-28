@@ -12,7 +12,7 @@ All profile references can be found in the
 
 #
 
-## Current App Status - 28th June, 2023
+## Current App Status - 29th June, 2023
 
 The app development has been finished, and can be found [here](https://info-dashboard-template.netlify.app/). The final application is deployed using Netlify, and the status of the deployment and other statuses/stats can be seen through the badge below.
 
