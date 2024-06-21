@@ -3,7 +3,7 @@
 <h1 align="center">A Basic Information Dashboard Template</h1>
 </p>
 
-This project is a very basic template of a dashboard design to showcase various information through tabs and cards. It includes data about several professional profiles (eg. Github and LinkedIn profiles).\
+This project is a very basic template of a dashboard design to showcase various information through tabs and cards.\
 \
 Credits to [@DenverCoder1](https://github.com/DenverCoder1)'s [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) for the streak widget which is part of the profile card.\
 \
