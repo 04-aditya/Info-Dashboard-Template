@@ -11,9 +11,7 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import PersonIcon from "@mui/icons-material/Person";
 import GroupsIcon from "@mui/icons-material/Groups";
-import ExtensionIcon from "@mui/icons-material/Extension";
 import { Link } from "react-router-dom";
 import { appTheme } from "../Theme";
 
@@ -68,15 +66,9 @@ export default function CustomSideBar() {
     setOpen(false);
   };
 
-  const iconArray = [
-    <HomeIcon />,
-    <DashboardIcon />,
-    <PersonIcon />,
-    <GroupsIcon />,
-    <ExtensionIcon />,
-  ];
+  const iconArray = [<HomeIcon />, <DashboardIcon />, <GroupsIcon />];
 
-  const pathsArray = ["/", "dashboard", "profile", "team"];
+  const pathsArray = ["/", "dashboard", "team"];
   let currentPath = window.location.pathname;
   return (
     <Drawer
@@ -88,7 +80,7 @@ export default function CustomSideBar() {
     >
       <Toolbar />
       <List>
-        {["Home", "Dashboard", "Profile", "Team"].map((text, index) => (
+        {["Home", "Dashboard", "Team"].map((text, index) => (
           <ListItem
             key={text}
             disablePadding

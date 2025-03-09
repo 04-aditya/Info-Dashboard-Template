@@ -7,7 +7,6 @@ import { Dashboard } from "./Pages/Dashboard/Dashboard";
 import { CustomAppBar } from "./Components/CustomAppBar";
 import { ThemeProvider, Toolbar } from "@mui/material";
 import { appTheme } from "./Theme";
-import { Profile } from "./Pages/Profile/Profile";
 import { Team } from "./Pages/Team/Team";
 import { Error } from "./Pages/Error/Error";
 
@@ -23,7 +22,6 @@ function App() {
             <Routes>
               <Route path="/" Component={() => <Home />} />
               <Route path="/dashboard" Component={() => <Dashboard />} />
-              <Route path="/profile" Component={() => <Profile />} />
               <Route path="/team" Component={() => <Team />} />
               <Route path="/*" Component={() => <Error />} />
             </Routes>
